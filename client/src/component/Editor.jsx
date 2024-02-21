@@ -45,7 +45,7 @@ function Editor() {
 
   //to connect to socket 
   useEffect(()=>{
-    const socketServer= io('http://localhost:9000');
+    const socketServer= io('https://google-eajzdjkhh-abro0058t.vercel.app');
     setSocket(socketServer);
     return () =>{
       socketServer.disconnect();
