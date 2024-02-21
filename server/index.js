@@ -3,17 +3,12 @@ import Connection from "./database/db.js";
 import { getDocument, updateDocument } from "./controller/docController.js";
 import cors  from "cors";
 
-const cors = require("cors");
-app.use(cors({
-  origin: 'https://google-doc-qbd7.vercel.app'
-}));
-
 const PORT=9000
 
 Connection();
 const io=new Server(PORT,{
     cors:{
-        origin:'https://google-doc-qbd7.vercel.app',
+        origin:'https://google-doc-qbd7.vercel.app/',
         methods:['GET','POST']
     }
 });
