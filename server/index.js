@@ -8,7 +8,7 @@ const PORT=9000
 Connection();
 const io=new Server(PORT,{
     cors:{
-        origin:'https://google-doc-qbd7.vercel.app/',
+        origin:['https://google-doc-qbd7.vercel.app/'],
         methods:['GET','POST']
     }
 });
