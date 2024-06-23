@@ -45,7 +45,7 @@ function Editor() {
 
   //to connect to socket 
   useEffect(()=>{
-    const socketServer= io('https://googledocbackend.netlify.app/');
+    const socketServer= io('https://c85f-103-55-60-114.ngrok-free.app/');
     setSocket(socketServer);
     return () =>{
       socketServer.disconnect();
