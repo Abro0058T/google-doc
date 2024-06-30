@@ -8,7 +8,7 @@ const PORT=9000
 Connection();
 const io=new Server(PORT,{
     cors:{
-        origin:["https://google-doc-qbd7.vercel.app","https://googledocclone.netlify.app","http://localhost:3000"],
+        origin:["https://google-doc-qbd7.vercel.app","https://googledocclone.netlify.app","http://localhost:3000","https://google-doc-1-d2fd.onrender.com"],
         methods:['GET','POST']
     }
 });
