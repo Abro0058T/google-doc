@@ -45,7 +45,7 @@ function Editor() {
 
   //to connect to socket 
   useEffect(()=>{
-    const socketServer= io('https://c85f-103-55-60-114.ngrok-free.app/');
+    const socketServer= io('https://google-doc-1jty.onrender.com/');
     setSocket(socketServer);
     return () =>{
       socketServer.disconnect();
